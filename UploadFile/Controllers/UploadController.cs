@@ -30,7 +30,7 @@ namespace UploadFile.Controllers
 
                 string fileNameWithPath = Path.Combine(path, fileName);
 
-            var blobstorageconnectionstring = "DefaultEndpointsProtocol=https;AccountName=terraformstatefile01;AccountKey=bBmuR3u569QbltpFjAp5OlDIphL+mA4Judys2aM/zY2RrTZmPipLeSzJo2B+qR91wxrh/RV9+qjY+AStn9F8wg==;EndpointSuffix=core.windows.net";
+            var blobstorageconnectionstring = "DefaultEndpointsProtocol=https;AccountName=stgfrontendeus001;AccountKey=dlvWpueHIDeeHFTFHoti9hsEQb2L5gkafGSpXIcfPWoCn8eaMaqO4o0SRFPv5+m3BGMCLuE2bKyb+AStYZ5iig==;EndpointSuffix=core.windows.net";
             var ContainerName = "fileupload";
             var container = new BlobContainerClient(blobstorageconnectionstring, ContainerName);
             var blob = container.GetBlobClient(fileName);
